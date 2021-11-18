@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding="UTF-8"?>
+
+<!DOCTYPE Shop[
+<!ELEMENT Shop (Details,Items)>
+<!ATTLIST Shop
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Details (Shop_Name,Address,Telephone,MobileNo,Website,Email)>
+<!ATTLIST Details
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Items (Monitors,CPUs,Speakers,Televisions,Mouses,Keyboards,
+                 Harddisks)>
+<!ATTLIST Items
+  xmlns CDATA #FIXED ''
+  Type NMTOKEN #REQUIRED>
+
+<!ELEMENT Shop_Name (#PCDATA)>
+<!ATTLIST Shop_Name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Address (Province,District,City,WardNo)>
+<!ATTLIST Address
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Telephone (#PCDATA)>
+<!ATTLIST Telephone
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT MobileNo (#PCDATA)>
+<!ATTLIST MobileNo
+  xmlns CDATA #FIXED ''
+  SimType NMTOKEN #REQUIRED>
+
+<!ELEMENT Website (#PCDATA)>
+<!ATTLIST Website
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Email (#PCDATA)>
+<!ATTLIST Email
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Monitors (Monitor)+>
+<!ATTLIST Monitors
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT CPUs (CPU)>
+<!ATTLIST CPUs
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Speakers (Speaker)>
+<!ATTLIST Speakers
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Televisions (Tv)>
+<!ATTLIST Televisions
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Mouses (Mouse)>
+<!ATTLIST Mouses
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Keyboards (Keyboard)>
+<!ATTLIST Keyboards
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Harddisks (Harddisk)>
+<!ATTLIST Harddisks
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Province (#PCDATA)>
+<!ATTLIST Province
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT District (#PCDATA)>
+<!ATTLIST District
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT City (#PCDATA)>
+<!ATTLIST City
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT WardNo (#PCDATA)>
+<!ATTLIST WardNo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Monitor (Name,Description,Quantity,Price,Manufacturer,
+                   Model_No?,
+                   (Item_Origin|Manufacturer_date|warranty|weight|Color
+                    |Dimension|Resolution)+)>
+<!ATTLIST Monitor
+  xmlns CDATA #FIXED ''
+  delivery_type NMTOKEN #IMPLIED
+  device_size NMTOKEN #IMPLIED
+  item_no CDATA #REQUIRED
+  type NMTOKEN #REQUIRED
+  video_quality NMTOKEN #IMPLIED>
+
+<!ELEMENT CPU (Name,Description,Quantity,weight,warranty,Price)>
+<!ATTLIST CPU
+  xmlns CDATA #FIXED ''
+  delivery_type NMTOKEN #REQUIRED
+  device_size NMTOKEN #REQUIRED
+  item_no CDATA #REQUIRED>
+
+<!ELEMENT Speaker (Name,Description,Manufacturer_date,Quantity,Price)>
+<!ATTLIST Speaker
+  xmlns CDATA #FIXED ''
+  item_no CDATA #REQUIRED
+  sound_quality NMTOKEN #REQUIRED>
+
+<!ELEMENT Tv (Name,Description,Model_No,Price,Quantity,warranty)>
+<!ATTLIST Tv
+  xmlns CDATA #FIXED ''
+  category NMTOKEN #REQUIRED
+  item_no CDATA #REQUIRED
+  screen_size CDATA #REQUIRED>
+
+<!ELEMENT Mouse (Name,Description,Manufacturer_date,Item_Origin,
+                 Quantity,Price)>
+<!ATTLIST Mouse
+  xmlns CDATA #FIXED ''
+  item_no CDATA #REQUIRED>
+
+<!ELEMENT Keyboard (Name,Description,Manufacturer_date,Quantity,Price)>
+<!ATTLIST Keyboard
+  xmlns CDATA #FIXED ''
+  item_no CDATA #REQUIRED>
+
+<!ELEMENT Harddisk (Name,Description,Manufacturer_date,warranty,
+                    Quantity,Price)>
+<!ATTLIST Harddisk
+  xmlns CDATA #FIXED ''
+  item_no CDATA #REQUIRED>
+
+<!ELEMENT Manufacturer (#PCDATA)>
+<!ATTLIST Manufacturer
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Color (#PCDATA)>
+<!ATTLIST Color
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Dimension (#PCDATA)>
+<!ATTLIST Dimension
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Resolution (#PCDATA)>
+<!ATTLIST Resolution
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Name (#PCDATA)>
+<!ATTLIST Name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Description (desc)+>
+<!ATTLIST Description
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT desc (#PCDATA)>
+<!ATTLIST desc
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Quantity (#PCDATA)>
+<!ATTLIST Quantity
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Price (#PCDATA)>
+<!ATTLIST Price
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Model_No (#PCDATA)>
+<!ATTLIST Model_No
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Manufacturer_date (#PCDATA)>
+<!ATTLIST Manufacturer_date
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT warranty (#PCDATA)>
+<!ATTLIST warranty
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Item_Origin (#PCDATA)>
+<!ATTLIST Item_Origin
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT weight (#PCDATA)>
+<!ATTLIST weight
+  xmlns CDATA #FIXED ''>
+]>

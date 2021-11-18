@@ -1,0 +1,177 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Shop" type="ShopType"/>
+  <xs:complexType name="AddressType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Province"/>
+      <xs:element type="xs:string" name="District"/>
+      <xs:element type="xs:string" name="City"/>
+      <xs:element type="xs:byte" name="WardNo"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MobileNoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:long">
+        <xs:attribute type="xs:string" name="SimType"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DetailsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Shop_Name"/>
+      <xs:element type="AddressType" name="Address"/>
+      <xs:element type="xs:string" name="Telephone"/>
+      <xs:element type="MobileNoType" name="MobileNo"/>
+      <xs:element type="xs:anyURI" name="Website"/>
+      <xs:element type="xs:string" name="Email"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DescriptionType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="desc" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MonitorType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="DescriptionType" name="Description"/>
+      <xs:element type="xs:byte" name="Quantity"/>
+      <xs:element type="xs:string" name="Price"/>
+      <xs:element type="xs:string" name="Manufacturer"/>
+      <xs:element type="xs:string" name="Resolution"/>
+      <xs:element type="xs:string" name="Dimension"/>
+      <xs:element type="xs:string" name="Color"/>
+      <xs:element type="xs:string" name="weight"/>
+      <xs:element type="xs:string" name="Item_Origin"/>
+      <xs:element type="xs:string" name="Manufacturer_date"/>
+      <xs:element type="xs:string" name="warranty"/>
+      <xs:element type="xs:string" name="Model_No"/>
+    </xs:choice>
+    <xs:attribute type="xs:byte" name="item_no" use="optional"/>
+    <xs:attribute type="xs:string" name="type" use="optional"/>
+    <xs:attribute type="xs:string" name="delivery_type" use="optional"/>
+    <xs:attribute type="xs:string" name="device_size" use="optional"/>
+    <xs:attribute type="xs:string" name="video_quality" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="MonitorsType">
+    <xs:sequence>
+      <xs:element type="MonitorType" name="Monitor" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CPUType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="DescriptionType" name="Description"/>
+      <xs:element type="xs:byte" name="Quantity"/>
+      <xs:element type="xs:string" name="weight"/>
+      <xs:element type="xs:string" name="warranty"/>
+      <xs:element type="xs:string" name="Price"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="item_no"/>
+    <xs:attribute type="xs:string" name="delivery_type"/>
+    <xs:attribute type="xs:string" name="device_size"/>
+  </xs:complexType>
+  <xs:complexType name="CPUsType">
+    <xs:sequence>
+      <xs:element type="CPUType" name="CPU"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SpeakerType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="DescriptionType" name="Description"/>
+      <xs:element type="xs:string" name="Manufacturer_date"/>
+      <xs:element type="xs:byte" name="Quantity"/>
+      <xs:element type="xs:string" name="Price"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="item_no"/>
+    <xs:attribute type="xs:string" name="sound_quality"/>
+  </xs:complexType>
+  <xs:complexType name="SpeakersType">
+    <xs:sequence>
+      <xs:element type="SpeakerType" name="Speaker"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TvType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="DescriptionType" name="Description"/>
+      <xs:element type="xs:string" name="Model_No"/>
+      <xs:element type="xs:string" name="Price"/>
+      <xs:element type="xs:byte" name="Quantity"/>
+      <xs:element type="xs:string" name="warranty"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="item_no"/>
+    <xs:attribute type="xs:string" name="screen_size"/>
+    <xs:attribute type="xs:string" name="category"/>
+  </xs:complexType>
+  <xs:complexType name="TelevisionsType">
+    <xs:sequence>
+      <xs:element type="TvType" name="Tv"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MouseType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="DescriptionType" name="Description"/>
+      <xs:element type="xs:string" name="Manufacturer_date"/>
+      <xs:element type="xs:string" name="Item_Origin"/>
+      <xs:element type="xs:byte" name="Quantity"/>
+      <xs:element type="xs:string" name="Price"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="item_no"/>
+  </xs:complexType>
+  <xs:complexType name="MousesType">
+    <xs:sequence>
+      <xs:element type="MouseType" name="Mouse"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="KeyboardType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="DescriptionType" name="Description"/>
+      <xs:element type="xs:string" name="Manufacturer_date"/>
+      <xs:element type="xs:byte" name="Quantity"/>
+      <xs:element type="xs:string" name="Price"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="item_no"/>
+  </xs:complexType>
+  <xs:complexType name="KeyboardsType">
+    <xs:sequence>
+      <xs:element type="KeyboardType" name="Keyboard"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HarddiskType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="DescriptionType" name="Description"/>
+      <xs:element type="xs:string" name="Manufacturer_date"/>
+      <xs:element type="xs:string" name="warranty"/>
+      <xs:element type="xs:byte" name="Quantity"/>
+      <xs:element type="xs:string" name="Price"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="item_no"/>
+  </xs:complexType>
+  <xs:complexType name="HarddisksType">
+    <xs:sequence>
+      <xs:element type="HarddiskType" name="Harddisk"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ItemsType">
+    <xs:sequence>
+      <xs:element type="MonitorsType" name="Monitors"/>
+      <xs:element type="CPUsType" name="CPUs"/>
+      <xs:element type="SpeakersType" name="Speakers"/>
+      <xs:element type="TelevisionsType" name="Televisions"/>
+      <xs:element type="MousesType" name="Mouses"/>
+      <xs:element type="KeyboardsType" name="Keyboards"/>
+      <xs:element type="HarddisksType" name="Harddisks"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Type"/>
+  </xs:complexType>
+  <xs:complexType name="ShopType">
+    <xs:sequence>
+      <xs:element type="DetailsType" name="Details"/>
+      <xs:element type="ItemsType" name="Items"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,233 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Shop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Details">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Shop_Name"/>
+              <xs:element name="Address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Province"/>
+                    <xs:element type="xs:string" name="District"/>
+                    <xs:element type="xs:string" name="City"/>
+                    <xs:element type="xs:byte" name="WardNo"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="Telephone"/>
+              <xs:element name="MobileNo">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:long">
+                      <xs:attribute type="xs:string" name="SimType"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:anyURI" name="Website"/>
+              <xs:element type="xs:string" name="Email"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Items">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Monitors">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Monitor" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element type="xs:string" name="Name"/>
+                          <xs:element name="Description">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="desc" maxOccurs="unbounded" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:byte" name="Quantity"/>
+                          <xs:element type="xs:string" name="Price"/>
+                          <xs:element type="xs:string" name="Manufacturer"/>
+                          <xs:element type="xs:string" name="Resolution"/>
+                          <xs:element type="xs:string" name="Dimension"/>
+                          <xs:element type="xs:string" name="Color"/>
+                          <xs:element type="xs:string" name="weight"/>
+                          <xs:element type="xs:string" name="Item_Origin"/>
+                          <xs:element type="xs:string" name="Manufacturer_date"/>
+                          <xs:element type="xs:string" name="warranty"/>
+                          <xs:element type="xs:string" name="Model_No"/>
+                        </xs:choice>
+                        <xs:attribute type="xs:byte" name="item_no" use="optional"/>
+                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                        <xs:attribute type="xs:string" name="delivery_type" use="optional"/>
+                        <xs:attribute type="xs:string" name="device_size" use="optional"/>
+                        <xs:attribute type="xs:string" name="video_quality" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="CPUs">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CPU">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Name"/>
+                          <xs:element name="Description">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="desc" maxOccurs="unbounded" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:byte" name="Quantity"/>
+                          <xs:element type="xs:string" name="weight"/>
+                          <xs:element type="xs:string" name="warranty"/>
+                          <xs:element type="xs:string" name="Price"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="item_no"/>
+                        <xs:attribute type="xs:string" name="delivery_type"/>
+                        <xs:attribute type="xs:string" name="device_size"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Speakers">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Speaker">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Name"/>
+                          <xs:element name="Description">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="desc" maxOccurs="unbounded" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="Manufacturer_date"/>
+                          <xs:element type="xs:byte" name="Quantity"/>
+                          <xs:element type="xs:string" name="Price"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="item_no"/>
+                        <xs:attribute type="xs:string" name="sound_quality"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Televisions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Tv">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Name"/>
+                          <xs:element name="Description">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="desc" maxOccurs="unbounded" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="Model_No"/>
+                          <xs:element type="xs:string" name="Price"/>
+                          <xs:element type="xs:byte" name="Quantity"/>
+                          <xs:element type="xs:string" name="warranty"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="item_no"/>
+                        <xs:attribute type="xs:string" name="screen_size"/>
+                        <xs:attribute type="xs:string" name="category"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Mouses">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Mouse">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Name"/>
+                          <xs:element name="Description">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="desc" maxOccurs="unbounded" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="Manufacturer_date"/>
+                          <xs:element type="xs:string" name="Item_Origin"/>
+                          <xs:element type="xs:byte" name="Quantity"/>
+                          <xs:element type="xs:string" name="Price"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="item_no"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Keyboards">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Keyboard">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Name"/>
+                          <xs:element name="Description">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="desc" maxOccurs="unbounded" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="Manufacturer_date"/>
+                          <xs:element type="xs:byte" name="Quantity"/>
+                          <xs:element type="xs:string" name="Price"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="item_no"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Harddisks">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Harddisk">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Name"/>
+                          <xs:element name="Description">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="desc" maxOccurs="unbounded" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="Manufacturer_date"/>
+                          <xs:element type="xs:string" name="warranty"/>
+                          <xs:element type="xs:byte" name="Quantity"/>
+                          <xs:element type="xs:string" name="Price"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="item_no"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="Type"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

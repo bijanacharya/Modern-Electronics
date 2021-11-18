@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+
+<!DOCTYPE address SYSTEM "19030814.dtd">
+
+<Shop>
+<Details>
+<Shop_Name>Modern Electonics</Shop_Name> 
+<Address>
+	<Province>Gandaki</Province>
+	<District>Kaski</District>
+	<City>Pokhara</City>
+	<WardNo>1</WardNo>
+</Address> 
+<Telephone>01-4411485,01-4411486</Telephone>
+<MobileNo SimType="Ncell">9804121548</MobileNo>
+<Website>www.electronics.com</Website>
+<Email>modernelectronic@gmail.com</Email>
+
+</Details>
+
+<Items Type="Electronics">
+
+<Monitors>
+<Monitor item_no="1" type="LED" delivery_type="free" device_size="large" video_quality="HD" >
+<Name>HP Pavilion 21.5-Inch IPS LED HDMI VGA 
+Monitor</Name>
+<Description>
+<desc>Monitor: 21.5-inch diagonal Full HD 
+(1920x1080) IPS; Enjoy vibrant images with 178-degree wide-viewing 
+angles.</desc>
+<desc>Ports: VGA, HDMI, and HDCP support help 
+you stay connected;Power Consumption: 20 Watt</desc>
+</Description>
+<Quantity>11</Quantity>
+<Price>$89.99</Price>
+<Manufacturer>HP</Manufacturer> 
+<Resolution>1920x1080</Resolution> 
+<Dimension>21.0 x 12.95 x 1.96 inches</Dimension> 
+<Color>Black</Color> 
+<weight>5.1 kg</weight>
+<Item_Origin>India</Item_Origin>
+<Manufacturer_date>2018 A.D</Manufacturer_date>
+<warranty>6 Months</warranty>
+</Monitor>
+
+<Monitor item_no="2" type="LCD" >
+<Name>ASUS 24-inch Full HD FreeSync Gaming 
+Monitor </Name>
+<Description>
+<desc>1ms response time featuring ASUS GameFast 
+Input Technology and dual HDMI ports for a smooth console gaming 
+experience</desc>
+<desc>Ergonomic stand with full height/tilt/swivel/pivot 
+adjustments to accommodate any desk</desc>
+<desc>Adaptive-Sync (FreeSync) technology supported 
+within 40Hz~75Hz for HDMI port</desc>
+</Description>
+<Quantity>10</Quantity>
+<Price>$89.99</Price>
+<Manufacturer>ASUS</Manufacturer>
+<Manufacturer_date>2019 A.D</Manufacturer_date>
+<warranty>6 Months</warranty>
+<Item_Origin>India</Item_Origin>
+<weight>5.5 kg</weight>
+<Resolution>1920x1080</Resolution>
+<Dimension>22.0 x 12.95 x 1.96 inches</Dimension> 
+<Color>Grey</Color> 
+</Monitor>
+
+<Monitor item_no="3" type="CRT" video_quality="SD">
+<Name>Dell 17" CRT Monitor</Name>
+<Description>
+<desc>Maximum resolution of 1,280 x 1,024</desc>
+<desc>0.27-millimeter dot pitch</desc>
+<desc>16-inch viewable screen size</desc>
+<desc>Antiglare, antistatic screen</desc>
+<desc>Completely plug-and-play ready</desc>
+</Description>
+<Quantity>10</Quantity>
+<Price>$40.99</Price>
+<Manufacturer>Dell</Manufacturer>
+<Model_No>Dell Inspiron 1983</Model_No> 
+<Manufacturer_date>2020 A.D</Manufacturer_date>
+<warranty>6 Months</warranty>
+<Item_Origin>India</Item_Origin>
+<weight>5.7 kg</weight>
+<Resolution>1280 x 10240</Resolution>
+<Dimension>20.0 x 12.95 x 1.96 inches</Dimension> 
+<Color>Black</Color> 
+</Monitor>
+</Monitors>
+
+<CPUs>
+<CPU item_no="5" delivery_type="free" device_size="middle">
+<Name>Intel Core i7-8700K Coffee Lake 6-Core 3.7 GHz 
+(4.7 GHz Turbo) LGA 1151 (300 Series) 95W BX80684I78700K Desktop Processor 
+Intel UHD Graphics 630</Name>
+
+<Description>
+<desc>Only Compatible with Intel 300 Series 
+Motherboard</desc>
+<desc>For A Great VR Experience</desc>
+<desc>Max Turbo Frequency 4.7 GHz</desc>
+<desc>Intel UHD Graphics 630</desc>
+<desc>Unlocked Processor</desc>
+<desc>DDR4 Support</desc>
+<desc>Socket LGA 1151 (300 Series)</desc>
+<desc>Cooler/thermal paste not included</desc>
+</Description>
+<Quantity>10</Quantity>
+<weight>5 kg</weight>
+<warranty>6 Months</warranty>
+<Price>$339.99</Price>
+</CPU>
+</CPUs>
+
+<Speakers>
+<Speaker item_no="7" sound_quality="Jazz">
+<Name>AmazonBasics USB-Powered Computer 
+Speakers</Name>
+<Description>
+<desc>USB powered for portability</desc>
+<desc>Total RMS Power: 3W (1.5 per 
+speaker)</desc>
+<desc>Volume control with On/Standby</desc>
+<desc>Power Supply: 5V USB,LED power 
+indicator</desc>
+<desc>Ships in Certified Frustration-Free 
+Packaging</desc>
+</Description>
+<Manufacturer_date>2018 A.D</Manufacturer_date>
+<Quantity>40</Quantity>
+<Price>$10.99</Price>
+</Speaker>
+</Speakers>
+
+<Televisions>
+<Tv item_no="10" screen_size="32 inch" category="Smart">
+<Name>Sony</Name>
+<Description>
+<desc>Screen Size 32 Inch.</desc>
+<desc>Full Hd smart technology</desc>
+</Description>
+<Model_No>KLV-32W602D</Model_No>
+<Price>$55 </Price>
+<Quantity>52</Quantity>
+<warranty>6 Months</warranty>
+</Tv>
+</Televisions>
+
+<Mouses>
+<Mouse item_no="11">
+<Name>Logitech Wireless Mouse M545, Black</Name>
+<Description>
+<desc>The two extra thumb buttons put extra 
+control right where you need it, so it's simpler and faster to get things done.</desc>
+<desc>Dual-Axis wheel is optimized for smooth 
+vertical scrolling </desc>
+</Description>
+<Manufacturer_date>2018 A.D</Manufacturer_date>
+<Item_Origin>China</Item_Origin>
+<Quantity>40</Quantity>
+<Price>$13.95</Price>
+</Mouse>
+</Mouses>
+
+<Keyboards>
+<Keyboard item_no="13">
+<Name>AZIO KB506U Large Print 5-Color Backlit Wired 
+Keyboard</Name>
+<Description>
+<desc>Enhanced visibility, colorful backlights and 
+built-in hotkeys</desc>
+<desc>Easy to see large print keys</desc>
+<desc>2X Larger than conventional 
+keyboards</desc>
+<desc>Five interchangeable backlight colors with 
+adjustable brightness</desc>
+<desc>Dedicated internet, multimedia, and 
+calculator hotkeys</desc>
+</Description>
+<Manufacturer_date>2020 A.D</Manufacturer_date>
+<Quantity>20</Quantity>
+<Price>$36.6</Price>
+</Keyboard>
+</Keyboards>
+
+<Harddisks>
+<Harddisk item_no="15">
+<Name>WD Blue 2TB Desktop Hard Disk Drive - SATA 6 
+Gb/s 64MB Cache 3.5 Inch</Name>
+<Description>
+<desc>Capacity: 2 TB</desc>
+<desc>Form Factor: 3.5 inch</desc>
+<desc>Interface: SATA 6Gb/s</desc>
+<desc>5400 rpm</desc>
+<desc>buffer: 64 MB</desc>
+<desc>Designed for creative professionals, gamer 
+and system builders</desc>
+</Description>
+<Manufacturer_date>2019 A.D</Manufacturer_date>
+<warranty>6 Months</warranty>
+<Quantity>20</Quantity>
+<Price>$53.3</Price>
+</Harddisk>
+</Harddisks>
+
+</Items>
+</Shop>
